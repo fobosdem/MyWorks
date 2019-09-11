@@ -25,19 +25,19 @@ namespace ClassLibrary
 			}
 		}
 
-		public override string TypeOfFigure()
-		{
-			string result;
-			if (Points[1].Y == Points[2].Y)
-			{
-				result = "Figure is circle";
-			}
-			else
-			{
-				result = "Figure is elips";
-			}
-			return result;
-		}
+		//public override string TypeOfFigure()
+		//{
+		//	string result;
+		//	if (Points[1].Y == Points[2].Y)
+		//	{
+		//		result = "Figure is circle";
+		//	}
+		//	else
+		//	{
+		//		result = "Figure is elips";
+		//	}
+		//	return result;
+		//}
 
 		public override string ToString()
 		{

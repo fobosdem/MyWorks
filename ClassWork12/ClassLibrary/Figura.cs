@@ -69,7 +69,40 @@ namespace ClassLibrary
 		}
 		public virtual string TypeOfFigure()
 		{
-			return "";
+			string result;
+			switch (Points.Length)
+			{
+				case 3:
+					if(Points[1].Y == Points[2].Y)
+					{
+						result =  "Figure is circle";
+					}
+					else
+					{
+						result = "Figure is elips";
+					}
+					break;
+
+				case 4:
+					if(MathLength.GetLength(Points[0], Points[2]) == MathLength.GetLength(Points[1], Points[3]))
+					{
+						result = "Figure is square";
+					}
+					else
+					{
+						result = "Some sort of quadrangle";
+					}
+					break;
+				default:
+					result = "Type of figure cant be reached";
+					break;
+			}
+			return result;
+		}
+		public override string ToString()
+		{
+			return $"{TypeOfFigure()}, ploshyad = {Area}, perimetr = {Perimetr}";
+
 		}
 	}
 }
