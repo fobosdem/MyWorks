@@ -16,7 +16,7 @@ namespace ClassLibrary
 			Y = y;
 		}
 	}
-	public abstract class Figura
+	public abstract class Figura : IDrawingInterface
 	{
 		public Point[] Points { get; set; }
 		protected Figura()
@@ -63,6 +63,13 @@ namespace ClassLibrary
 				}
 				return result;
 			}
+		}
+		public void Drawing()
+		{
+		}
+		public virtual string TypeOfFigure()
+		{
+			return "";
 		}
 	}
 }

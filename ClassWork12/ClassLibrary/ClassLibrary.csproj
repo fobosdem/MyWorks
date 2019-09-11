@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Circle.cs" />
+    <Compile Include="DrawingInterface.cs" />
     <Compile Include="Figura.cs" />
     <Compile Include="MathLength.cs" />
     <Compile Include="Trapeciya.cs" />

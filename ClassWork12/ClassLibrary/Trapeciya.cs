@@ -33,5 +33,20 @@ namespace ClassLibrary
 				throw new Exception("Can take array of 4 doubles");
 			}
 		}
+
+		public override string TypeOfFigure()
+		{
+			string result;
+			if (MathLength.GetLength(Points[0], Points[2]) == MathLength.GetLength(Points[1], Points[3]))
+			{
+				result = "Figure is square";
+			}
+			else
+			{
+				result = "Some sort of quadrangle";
+			}
+			return result;
+		}
+
 	}
 }

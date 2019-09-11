@@ -31,5 +31,14 @@ namespace ClassLibrary
 				throw new Exception("Can take array of 3 doubles");
 			}
 		}
+		public override string TypeOfFigure()
+		{
+			string result = "";
+			if (Points.Length > 2)
+			{
+				result = "Figure is trirangle";
+			}
+			return result;
+		}
 	}
 }
